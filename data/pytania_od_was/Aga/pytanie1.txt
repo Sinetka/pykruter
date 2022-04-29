@@ -1,0 +1,4 @@
+Nr: 1
+Pytanie: Czy możesz się pochwalić swoimi projektami?
+Odpowiedź: Tak
+Rezultat: 
