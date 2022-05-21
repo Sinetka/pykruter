@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    {# HEADLINE #}
+        
+    <br>
+    <p>Dodaj pytanie rekrutacyjne.</p>
+        
+
+    {# ADD QUESTION #}
+
+    <div class="form-wrapper" style="text-align:center">
+        <form  action="" method="post">
+        
+            {{ form.csrf_token() }}
+
+            <p><b>Pytanie:</b></p>
+            {{ form.question(rows=5, cols=80) }}
+            
+            <p><b>Odpowiedź:</b></p>
+            {{ form.answer(rows=5, cols=80) }}
+
+            <p><b>Źródło:</b></p>
+            {{ form.source }}
+
+            <p><b>Jak poszło?</b></p>
+            {{ form.result }}
+
+            <p><b>Dziedzina:</b></p>
+            {{ form.category }}
+
+            <p><b>Poziom:</b></p>
+            {{ form.level }}
+
+            <p>{{ form.button }}</p>
+
+        </form>
+    </div>
+
+{% endblock %}
